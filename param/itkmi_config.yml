@@ -1,6 +1,6 @@
 %YAML:1.0
 
-MINumberOfHistogramBins: 20
+MI_NumberOfHistogramBins: 20
 samplingPercentage: 0.20
 transformSetAngle: 0.0
 
