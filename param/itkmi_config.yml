@@ -1,10 +1,21 @@
 %YAML:1.0
 
-dataset: /Users/kp/Downloads/pixhack_datasets/kyiv_short_loop.bag
-results: /Users/kp/Downloads/pixhack_datasets/entropy_kyiv_short_loop.mat
-topics:
-   - /camera/image_color
-   - /clock
-   - /mavros/gps/fix
-   - /mavros/imu/data
+MINumberOfHistogramBins: 20
+samplingPercentage: 0.20
+transformSetAngle: 0.0
+
+translationScale: 0.0078 
+#1.0 / 128.0
+
+centerScale: 1000.0
+# prevents it from moving during the optimization
+
+#optimizer
+SetLearningRate: 0.5
+SetMinimumStepLength: 0.0001
+SetNumberOfIterations: 400
+
+#dataset: /Users/kp/Downloads/pixhack_datasets/kyiv_short_loop.bag
+results: mi_kyiv_short_loop.mat
+
 
