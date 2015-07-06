@@ -1,0 +1,10 @@
+%YAML:1.0
+
+dataset: /Users/kp/Downloads/pixhack_datasets/kyiv_short_loop.bag
+results: /Users/kp/Downloads/pixhack_datasets/entropy_kyiv_short_loop.mat
+topics:
+   - /camera/image_color
+   - /clock
+   - /mavros/gps/fix
+   - /mavros/imu/data
+
