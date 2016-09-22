@@ -4,6 +4,11 @@
 #  MATIO_LIBRARIES    - List of libraries.
 #  MATIO_FOUND        - True if matio found.
 
+set(MATIO_INCLUDE_DIR "/usr/include/")
+
+# set(MATIO_LIBRARY ON)
+
+
 # Look for the header file.
 FIND_PATH(MATIO_INCLUDE_DIR NAMES matio.h)
 MARK_AS_ADVANCED(MATIO_INCLUDE_DIR)
@@ -12,7 +17,7 @@ MARK_AS_ADVANCED(MATIO_INCLUDE_DIR)
 FIND_LIBRARY(MATIO_LIBRARY NAMES matio)
 MARK_AS_ADVANCED(MATIO_LIBRARY)
 
-# handle the QUIETLY and REQUIRED arguments and set MATIO_FOUND to TRUE if 
+# handle the QUIETLY and REQUIRED arguments and set MATIO_FOUND to TRUE if
 # all listed variables are TRUE
 INCLUDE(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(MATIO DEFAULT_MSG MATIO_LIBRARY MATIO_INCLUDE_DIR)

@@ -299,7 +299,7 @@ MIEstimator::MIEstimator(int argc, char *argv[])
 	mi_pub = nh.advertise<entropy::MI>("/mi", 1000);
 
 	std::string filename = "itkmi_config.yml";
-	std::string pathFilename = ros::package::getPath("entropy")+"/data/"+filename;
+	std::string pathFilename = ros::package::getPath("itkmi")+"/param/"+filename;
 
 	cout << "Loading config..." << endl;
 	FileStorage fs( pathFilename, FileStorage::READ );
